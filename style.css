@@ -47,7 +47,7 @@ html,body{
     font-weight: 500;
 }
 #hero{
-    height: calc(100% - 30vh);
+    height: 100%;
     width: 100%;
     background-color: aqua;
 }
