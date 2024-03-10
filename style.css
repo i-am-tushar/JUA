@@ -12,15 +12,37 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: antiquewhite;
 }
-#nav{
+#page1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: aqua; */
+   
+}
+#page1 #nav{
+    background:  linear-gradient(to right, #fff, #f8f1f1, #fff);
+}
+
+#page1 video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page1 #nav{
+   /* position: fixed; */
+   /* z-index: 1; */
     height: 20vh;
     width: 100%;
-    background-color: white;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+#nav img{
+    height: 100%;
+    background-color: white;
+    mix-blend-mode:multiply;
 }
 #nav h1 {
     
@@ -28,31 +50,33 @@ html,body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  #nav h4{
-    font-size: medium;
-  }
-#nav img{
-    height: 100%;
+#nav #name > h4{
+    margin-top: 5px;
+    background: -webkit-linear-gradient(#526e45, #95ec87);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
-#nav2{
-    height: 10vh;
+
+#hero{
+    /* height: calc(100% - 20vh); */
+    height: 100%;
     width: 100%;
-    background-color: #002147;
-    color: white;
+    background-color: #95ec87;
+    position: relative;
+}
+#overlay{
+    height: 5vh;
+    width: 100%;
+    background-color: #0021479f;
+    color: #fff;
+    
+    position: absolute;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-}
-#hero{
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
-}
-#hero video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    
+  
 }
